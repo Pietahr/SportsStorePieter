@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using SportsStorePieter.Models;
 
 namespace SportsStorePieter.Data
 {
@@ -13,5 +10,7 @@ namespace SportsStorePieter.Data
             var connectionstring = @"Server=.\SQLEXPRESS;Database=SportsStorePieter;Integrated Security=True;";
             optionsBuilder.UseSqlServer(connectionstring);
         }
+
+        
     }
 }
